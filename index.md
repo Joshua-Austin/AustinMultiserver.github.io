@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## Multiserver - by Joshua Austin
 
-You can use the [editor on GitHub](https://github.com/Joshua-Austin/AustinMultiserver.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Multiserver
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The function is used to simulate customers being served at a bank.
+The arrival time of each customer, how long their service will take, and how many servers are working, are the 3 factors that can be atken as input in the function. The arrival and service times must both be vectors of the same length, while number of servers will default to 1 unless specified to have more.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Installing
+To download from github use the following;
+```{r install}
+# install.packages("devtools")
+devtools::install_github("MQ-STAT1378/assignment2-question2-Joshua-Austin")
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Using Multiserver
+Entries need to be in the form;
+Multiserver(arrival_times, service_times, servers)
 
-### Jekyll Themes
+```{r}
+Multiserver(100:110, 110:100, 1)
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Joshua-Austin/AustinMultiserver.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
